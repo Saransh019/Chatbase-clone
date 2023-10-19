@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Chatbot.module.css";
 import { useState } from "react";
-import { Suggestions } from "../../Constants";
+import { Suggestions } from "../Constants";
 
 
 export default function Chatbot() {
