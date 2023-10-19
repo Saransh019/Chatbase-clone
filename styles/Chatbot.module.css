@@ -1,0 +1,178 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 95vh;
+  justify-content: space-between;
+  border-radius: 10px;
+
+}
+
+.wrapper {
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gray;
+  width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+  background-color: white;
+}
+.top {
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+.top img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.topLeft {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.topButtons {
+  width: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* height: 200px; */
+}
+.topButtons img {
+  height: 70%;
+  object-fit: contain;
+  cursor: pointer;
+}
+.topHeading {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
+}
+.clickk {
+  background-color: green;
+  position: absolute;
+  top: 0;
+}
+.wrapperTop{
+  height: 85%;
+}
+.wrapperBottom{
+  height: 15%;
+}
+.messageBoard {
+  width: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 92%;
+  /* padding: 0 10px; */
+  /* background-color: blue; */
+
+}
+.recmsg {
+  background-color: rgb(241, 241, 240);
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  margin: 10px ;
+  max-width: 300px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  word-break: break-all;
+
+}
+.sentmsg {
+  background-color: rgb(111, 68, 252);
+  color: white;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  margin: 10px  ;
+  max-width: 300px;
+  height: fit-content;
+  word-break: break-all;
+  align-self: flex-end;
+  border-radius: 5px;
+}
+.suggestions{
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  /* width: 100%; */
+  /* background-color: yellow; */
+}
+.suggestion{
+  background-color: rgb(241, 241, 240);
+  margin: 10px;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: max-content;
+  white-space: nowrap;
+}
+.inputBox{
+  /* background-color: white; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50%;
+}
+.inputBox input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  height: 25%;
+  margin: 0 10px;
+}
+
+.go{
+  height: 80%;
+  object-fit: contain;
+}
+
+.logoo{
+  width: 100%;
+}
+.logoo img{
+  height: 50px;
+  object-fit: contain;
+  border-radius: 100%;
+  float: right;
+}
+@media screen and (max-width:1000px) {
+  .container{
+    width: 100vw;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  .wrapper{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .messageBoard{
+    width: 100%;
+  }
+  .logoo img[src="down.svg"]{
+    display: none;
+  }
+  .logoo{
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+  }
+}
